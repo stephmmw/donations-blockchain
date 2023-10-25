@@ -26,7 +26,7 @@ class BlockChain():
         block = {
             "index": len(self.blocks),
             "data": data,
-            "timestamp": datetime.now(),            
+            "timestamp": str(datetime.now()),            
         }
         if block['index'] == 0: 
             block['last_hash'] = self.secret # For Origin block
